@@ -4,15 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>CodeWeek Course</title>
+
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+    @keyframes bgcolor {
+        0% {
+            color: #45a3e5
+        }
+
+        30% {
+            color: #66bf39
+        }
+
+        60% {
+            color: #eb670f
+        }
+
+        90% {
+            color: #f35
+        }
+
+        100% {
+            color: #864cbf
+        }
+    }
+
+    .title {
+        animation: bgcolor;
+        animation-duration: 1000ms;
+        animation-iteration-count: infinite;
+    }
+
+    </style>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <h1 class="title">Hello World</h1>
     <ul>
-        <li>Blue</li>
-        <li>Green</li>
-        <li>Red</li>
+        <li style="color: blue;">Blue</li>
+        <li style="color: green;">Green</li>
+        <li style="color: red;">Red</li>
     </ul>
 </body>
 </html>
